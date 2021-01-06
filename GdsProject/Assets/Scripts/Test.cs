@@ -17,7 +17,7 @@ public class Test : MonoBehaviour
             moveObject.position = position;
         }*/
 
-        carWheels.UpdatePosition(moveObjectX);
+        carWheels.UpdateWheelPosition(moveObjectX);
         
     }
 }
