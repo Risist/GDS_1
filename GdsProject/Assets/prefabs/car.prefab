@@ -384,9 +384,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementMode: 0
   movementSpeed: 0
-  jumpVelocityDamping: 0.0025
-  initialJumpVelocity: 0.04
-  gravity: 0.01
+  jumpVelocityDamping: 0.00325
+  initialJumpVelocity: 0.0505
+  gravity: 0.0125
 --- !u!114 &3083274500322666966
 MonoBehaviour:
   m_ObjectHideFlags: 0
