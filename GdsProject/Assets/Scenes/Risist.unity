@@ -200,6 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952708114}
   - component: {fileID: 952708113}
+  - component: {fileID: 952708115}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -219,7 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d301544e3d810e4d995f14a32bc5ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _behaviourPacks: []
+  _behaviourPacks:
+  - {fileID: 11400000, guid: 311b5c2cd1490874b9100c91d2154e27, type: 2}
 --- !u!4 &952708114
 Transform:
   m_ObjectHideFlags: 0
@@ -235,6 +237,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &952708115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952708112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0600730d20f5d4484ed43c12a8cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 16
 --- !u!4 &2014620796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3083274500322666795, guid: 9933dcb89018b6044a3461899e9b848d,
@@ -389,11 +404,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: car
       objectReference: {fileID: 0}
-    - target: {fileID: 3083274500322666796, guid: 9933dcb89018b6044a3461899e9b848d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9933dcb89018b6044a3461899e9b848d, type: 3}
 --- !u!1001 &7456539926399306763
@@ -421,7 +431,7 @@ PrefabInstance:
     - target: {fileID: 7456539925201109837, guid: 2795c6f1ea25b8e45a72e598450ce7b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.87
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: 7456539925201109837, guid: 2795c6f1ea25b8e45a72e598450ce7b4,
         type: 3}
