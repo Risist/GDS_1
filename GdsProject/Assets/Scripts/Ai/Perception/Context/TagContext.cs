@@ -12,13 +12,16 @@ namespace Ai.Eqs
     {
         public string tagName;
         Transform playerTransform;
+        Vector3 _lastPosition;
         public override Vector3 GetPoint()
         {
             if (playerTransform == null)
             {
-                playerTransform = GameObject.FindGameObjectWithTag(tagName).transform;
+                playerTransform = GameObject.FindGameObjectWithTag(tagName)?.transform;
             }
-            return playerTransform.transform.position;
+            if(playerTransform)
+                _lastPosition = playerTransform.transform.position;
+            return _lastPosition;
         }
     }
 }

@@ -9,7 +9,6 @@ public class CarMovementController : MonoBehaviour
     {
         ENormalRide,
         EJump,
-        EShoot
     }
 
     public EMovementMode movementMode;
