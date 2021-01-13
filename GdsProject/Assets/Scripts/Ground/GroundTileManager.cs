@@ -28,6 +28,25 @@ public class GroundTileManager : MonoSingleton<GroundTileManager>
 
         return true;
     }
+    public bool GetWorldHeight(float xTilePosition, out float height)
+    {
+        float begin;
+        var tile = GetTileAtTexturePosition(xTilePosition, out begin);
+
+        float xPositionOnTexture = xTilePosition - begin;
+
+
+        if (tile == null || !tile.IsOnTexture(xPositionOnTexture))
+        {
+            height = 0;
+            // wrong position
+            return false;
+        }
+
+        height = tile.ComputeWorldPosition(xPositionOnTexture).y;
+
+        return true;
+    }
 
     public void CutHoleInGround(Vector3 worldPosition, float worldRadius)
     {
@@ -73,4 +92,17 @@ public class GroundTileManager : MonoSingleton<GroundTileManager>
     }
 
     
+
+    [ContextMenu("SetupTilePositions")]
+    void EditorFunction_SetupTilePositions()
+    {
+        Vector3 position = transform.position;
+        foreach(var it in groundtiles)
+        {
+            float worldSpaceWidth = (float)it.width / (float)it.tileDefinition.pixelsPerUnit;
+            position.x += worldSpaceWidth * 0.5f;
+            it.transform.position = position;
+            position.x += worldSpaceWidth * 0.5f;
+        }
+    }
 }

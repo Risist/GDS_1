@@ -73,7 +73,7 @@ public class GroundTile : ScriptableObject
             var top = 0;
             for (int y = _texture.height - 1; y >= 0; --y)
             {
-                if (pixels[y] == alphaColor)
+                if (pixels[y] == alphaColor || pixels[y].a == 0)
                     top = y;
                 else
                     break;
