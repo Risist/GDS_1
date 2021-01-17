@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1600783529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1600783530}
+  m_Layer: 8
+  m_Name: GroundBreak Place
+  m_TagString: GroundBreak
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1600783530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600783529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.69, y: -0.86, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3083274500322666795}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3083274498947177379
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3083274498947177378}
   - component: {fileID: 3083274498947177377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3083274499670017071}
   - component: {fileID: 3083274499670017070}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3083274499797598708}
   - component: {fileID: 3083274499797598707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +292,7 @@ GameObject:
   - component: {fileID: 1722619415}
   - component: {fileID: 1728268877}
   - component: {fileID: 4451939172437345535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -285,6 +315,7 @@ Transform:
   - {fileID: 3083274499797598708}
   - {fileID: 5616636109406102875}
   - {fileID: 6820898523226501430}
+  - {fileID: 1600783530}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -518,7 +549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5616636109406102875}
   - component: {fileID: 8482664953249686071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletThrowerHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3362799001427420068, guid: 45764a0898c81c84d94da70f74e8b61c, type: 3}
   shootRate:
-    cd: 0.1
+    cd: 0.15
   parent: 1
 --- !u!1 &5651499799850168740
 GameObject:
@@ -565,7 +596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6820898523226501430}
   - component: {fileID: 5367993354533910265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletThrowerVertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,5 +631,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3362799001427420068, guid: d0fc06367c4eeb643a5be94552193ed9, type: 3}
   shootRate:
-    cd: 0.1
+    cd: 0.15
   parent: 1

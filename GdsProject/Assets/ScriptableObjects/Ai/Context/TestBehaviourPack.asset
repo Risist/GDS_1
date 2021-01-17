@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ab50cb440a4d91b67f6c4b6497a3ac, type: 3}
   m_Name: TestBehaviourPack
   m_EditorClassIdentifier: 
-  targetContext: {fileID: 11400000, guid: 15c4e6562994bae46ae0b8516663b79c, type: 2}
+  targetContext: {fileID: 11400000, guid: 7042457f4d465884f9b63959c5c6a9ff, type: 2}
   offsetFromTarget: {x: 0, y: 4.5, z: 0}
-  offsetFromTarget_state1: {x: 0, y: 0, z: 0}
-  offsetFromTarget_state2: {x: 0, y: 0, z: 0}
-  offsetFromTarget_state3: {x: 0, y: 0, z: 0}
-  offsetFromTarget_state4: {x: 0, y: 0, z: 0}
+  targetRandomParam: {x: 7, y: 1}
+  closeDistance: 0.25

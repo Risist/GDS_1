@@ -7,28 +7,47 @@ namespace Ai
     {
         public Eqs.Context targetContext;
         public Vector3 offsetFromTarget;
-        [Space]
-        public Vector3 offsetFromTarget_state1;
-        public Vector3 offsetFromTarget_state2;
-        public Vector3 offsetFromTarget_state3;
-        public Vector3 offsetFromTarget_state4;
+        public Vector2 targetRandomParam = new Vector2(7,1);
+        public float closeDistance = 0.1f;
 
 
         protected override void DefineBehaviours_Impl()
         {
             var stateMachine = controller.stateMachine;
             var ufoController = controller.GetComponent<UfoController>();
+            var transform = controller.transform;
 
             var idle = stateMachine.AddNewStateAsCurrent();
 
-            idle.AddOnUpdate(() =>
-            {
-                Vector3 contextPoint = targetContext.GetPoint();
-                GroundTileManager.instance.GetWorldHeight(contextPoint.x, out contextPoint.y );
+            Vector3 movementTargetOffset = Vector3.zero;
 
-                ufoController.SetMovementTarget(contextPoint + offsetFromTarget);
-            });
+            /*idle
+                .AddOnBegin(() => movementTargetOffset = new Vector3(
+                    (Random.value *2-1) * targetRandomParam.x, 
+                    (Random.value *2-1) * targetRandomParam.y))
+                .AddShallReturn( () =>
+                {
+                    Vector3 contextPoint = targetContext.GetPoint();
+                    GroundTileManager.instance.GetWorldHeight(contextPoint.x, out contextPoint.y);
+                    Vector3 target = contextPoint + offsetFromTarget + movementTargetOffset;
+
+                    Vector3 diff = (transform.position - target);
+                    diff.z = 0;
+                    return diff.sqrMagnitude < closeDistance * closeDistance;
+
+                })
+                .AddOnUpdate(() =>
+                {
+                    Vector3 contextPoint = targetContext.GetPoint();
+                    GroundTileManager.instance.GetWorldHeight(contextPoint.x, out contextPoint.y );
+
+                    Vector3 target = contextPoint + offsetFromTarget + movementTargetOffset;
+                    target.z = transform.position.z;
+                    ufoController.SetMovementTarget(target);
+                });*/
 
         }
+
+        
     }
 }

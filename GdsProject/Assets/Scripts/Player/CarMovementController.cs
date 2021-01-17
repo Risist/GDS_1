@@ -38,7 +38,7 @@ public class CarMovementController : MonoBehaviour
     void UpdateNormalRide()
     {
         _carWheels.UpdateWheelPosition(textureXposition);
-        GroundTileManager.instance.GetWorldHeight(textureXposition, out height);
+        GroundTileManager.instance.GetWorldHeight_TextureCoords(textureXposition, out height);
 
         if (_inputHolder.jumpInput)
             ChangeCurrentMovementMode(EMovementMode.EJump);
@@ -53,7 +53,7 @@ public class CarMovementController : MonoBehaviour
         jumpVelocity = Mathf.MoveTowards(jumpVelocity, 0, jumpVelocityDamping);
 
         float currentHeight;
-        GroundTileManager.instance.GetWorldHeight(textureXposition, out currentHeight);
+        GroundTileManager.instance.GetWorldHeight_TextureCoords(textureXposition, out currentHeight);
         if (jumpHeight < currentHeight)
         {
             ChangeCurrentMovementMode(EMovementMode.ENormalRide);
@@ -73,7 +73,7 @@ public class CarMovementController : MonoBehaviour
                 break;
 
             case EMovementMode.EJump:
-                GroundTileManager.instance.GetWorldHeight(textureXposition, out height);
+                GroundTileManager.instance.GetWorldHeight_TextureCoords(textureXposition, out height);
                 jumpHeight = height;
                 movementModeUpdate = UpdateJump;
                 movementModeFixedUpdate = FixedUpdateJump;

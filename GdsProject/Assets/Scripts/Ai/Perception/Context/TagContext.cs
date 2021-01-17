@@ -8,20 +8,19 @@ using UnityEngine;
 namespace Ai.Eqs
 {
     [CreateAssetMenu(fileName = "New TagContext", menuName = "Ris/Ai/Context/TagContext")]
-    public class TagContext : Context
+    public class TagContext : ObjectContext
     {
         public string tagName;
-        Transform playerTransform;
-        Vector3 _lastPosition;
-        public override Vector3 GetPoint()
+        GameObject tagObject;
+
+        public override GameObject GetGameObject()
         {
-            if (playerTransform == null)
+            if (tagObject == null)
             {
-                playerTransform = GameObject.FindGameObjectWithTag(tagName)?.transform;
+                tagObject = GameObject.FindGameObjectWithTag(tagName);
             }
-            if(playerTransform)
-                _lastPosition = playerTransform.transform.position;
-            return _lastPosition;
+            return tagObject;
         }
+
     }
 }

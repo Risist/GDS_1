@@ -275,6 +275,11 @@ namespace Ai
 
         public State GetState(int i) => _states[i];
 
+        public int GetStateIndex(State state)
+        {
+            return _states.FindIndex((o) => o == state);
+        }
+
         public State AddNewState()
         {
             return AddNewState<State>();

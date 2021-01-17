@@ -28,7 +28,7 @@ public class GroundTileManager : MonoSingleton<GroundTileManager>
 
         return true;
     }
-    public bool GetWorldHeight(float xTilePosition, out float height)
+    public bool GetWorldHeight_TextureCoords(float xTilePosition, out float height)
     {
         float begin;
         var tile = GetTileAtTexturePosition(xTilePosition, out begin);
@@ -47,6 +47,27 @@ public class GroundTileManager : MonoSingleton<GroundTileManager>
 
         return true;
     }
+    public bool GetWorldHeight_WorldCoords(float xTilePosition, out float height)
+    {
+        float begin;
+        float xTexturePosition;
+        var tile = GetTileAtWorldPosition(xTilePosition, out begin, out xTexturePosition);
+
+        float xPositionOnTexture = xTexturePosition - begin;
+
+
+        if (tile == null || !tile.IsOnTexture(xPositionOnTexture))
+        {
+            height = 0;
+            // wrong position
+            return false;
+        }
+
+        height = tile.ComputeWorldPosition(xPositionOnTexture).y;
+
+        return true;
+    }
+
 
     public void CutHoleInGround(Vector3 worldPosition, float worldRadius)
     {
@@ -90,8 +111,6 @@ public class GroundTileManager : MonoSingleton<GroundTileManager>
         }
         return null;
     }
-
-    
 
     [ContextMenu("SetupTilePositions")]
     void EditorFunction_SetupTilePositions()

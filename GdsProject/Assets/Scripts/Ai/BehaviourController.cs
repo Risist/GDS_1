@@ -49,15 +49,21 @@ namespace Ai
 
         #endregion BehaviourPack
 
+        public bool logCurrentState = false;
+
         private void Start()
         {
             InitBehaviourPacks();
             Debug.Assert(stateMachine.currentState != null, "No behaviour pack initialized current state");
+            
         }
 
         private void FixedUpdate()
         {
             stateMachine.UpdateStates();
+
+            if (logCurrentState)
+                Debug.Log(stateMachine.GetStateIndex(stateMachine.currentState) );
         }
     }
 

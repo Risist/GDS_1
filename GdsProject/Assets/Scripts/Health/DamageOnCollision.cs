@@ -27,12 +27,14 @@ public class DamageOnCollision : MonoBehaviour
         if ((requiredMask.value & (1 << other.gameObject.layer)) == 0)
             return;
 
+        BroadcastMessage("OnDamageDealed", SendMessageOptions.DontRequireReceiver);
+
         var damagable = other.GetComponent<IDamageable>();
         damageDataEnter.position = transform.position;
         damageDataContinous.position = transform.position;
         damageDataOnce.position = transform.position;
 
-        if (damagable != null && other.transform.root != transform.root)
+        if (damagable != null)
         {
             damagable.DealDamage(damageDataContinous);
             if (AttemptToDamage(damagable))
@@ -47,12 +49,14 @@ public class DamageOnCollision : MonoBehaviour
         if ((requiredMask.value & (1 << other.gameObject.layer)) == 0)
             return;
 
+        BroadcastMessage("OnDamageDealed", SendMessageOptions.DontRequireReceiver);
+
         var damagable = other.GetComponent<IDamageable>();
         damageDataEnter.position = transform.position;
         damageDataContinous.position = transform.position;
         damageDataOnce.position = transform.position;
 
-        if (damagable != null && other.transform.root != transform.root)
+        if (damagable != null)
         {
             damagable.DealDamage(damageDataEnter);
             if (AttemptToDamage(damagable))
@@ -68,11 +72,13 @@ public class DamageOnCollision : MonoBehaviour
         if ((requiredMask.value & (1 << collision.gameObject.layer)) == 0)
             return;
 
+        BroadcastMessage("OnDamageDealed", SendMessageOptions.DontRequireReceiver);
+
         var damagable = collision.gameObject.GetComponent<IDamageable>();
         damageDataEnter.position = transform.position;
         damageDataContinous.position = transform.position;
         damageDataOnce.position = transform.position;
-        if (damagable != null && collision.gameObject.transform.root != transform.root)
+        if (damagable != null )
         {
             damagable.DealDamage(damageDataContinous);
             if (AttemptToDamage(damagable))
@@ -87,11 +93,13 @@ public class DamageOnCollision : MonoBehaviour
         if ((requiredMask.value & (1 << collision.gameObject.layer)) == 0)
             return;
 
+        BroadcastMessage("OnDamageDealed", SendMessageOptions.DontRequireReceiver);
+
         var damagable = collision.gameObject.GetComponent<IDamageable>();
         damageDataEnter.position = transform.position;
         damageDataContinous.position = transform.position;
         damageDataOnce.position = transform.position;
-        if (damagable != null && collision.gameObject.transform.root != transform.root)
+        if (damagable != null)
         {
             damagable.DealDamage(damageDataEnter);
             if (AttemptToDamage(damagable))

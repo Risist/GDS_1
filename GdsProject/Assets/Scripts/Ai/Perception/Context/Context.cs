@@ -9,6 +9,14 @@ namespace Ai.Eqs
 {
     public abstract class Context : ScriptableObject
     {
-        public abstract Vector3 GetPoint();
+    }
+
+    public interface IPointContext
+    {
+        Vector3 GetPoint();
+    }
+    public interface IObjectContext
+    {
+        GameObject GetGameObject();
     }
 }
