@@ -1122,16 +1122,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: car
       objectReference: {fileID: 0}
-    - target: {fileID: 3083274500322666967, guid: 9933dcb89018b6044a3461899e9b848d,
-        type: 3}
-      propertyPath: gravity
-      value: 0.013
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083274500322666967, guid: 9933dcb89018b6044a3461899e9b848d,
-        type: 3}
-      propertyPath: jumpVelocityDamping
-      value: 0.00235
-      objectReference: {fileID: 0}
     - target: {fileID: 8482664953249686071, guid: 9933dcb89018b6044a3461899e9b848d,
         type: 3}
       propertyPath: shootRate.cd
