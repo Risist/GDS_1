@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 4246325560856384902}
   - component: {fileID: 6856673861186242595}
   m_Layer: 0
-  m_Name: Bullet Enemy DestroyTerrain Hole1
+  m_Name: Bullet Enemy DestroyTerrain Hole2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  pointContext: {fileID: 11400000, guid: 8c32b2cf3e7da5a408121eff850f3be0, type: 2}
+  pointContext: {fileID: 11400000, guid: fa90f36d0d826684d995ae01b2cdc57b, type: 2}
 --- !u!50 &3362799001427420069
 Rigidbody2D:
   serializedVersion: 4

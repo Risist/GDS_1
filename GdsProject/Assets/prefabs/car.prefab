@@ -421,9 +421,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementMode: 0
   movementSpeed: 0
-  jumpVelocityDamping: 0.00325
-  initialJumpVelocity: 0.0505
-  gravity: 0.0125
+  jumpVelocityDamping: 0.00335
+  initialJumpVelocity: 0.056
+  gravity: 0.0123
 --- !u!114 &3083274500322666966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,9 +455,9 @@ MonoBehaviour:
   _offsetPercent: 0
   offsetChangeSpeed: 0.0025
   offsetMin: 6
-  movementSpeedMin: 1.25
+  movementSpeedMin: 1.3
   offsetMax: 1
-  movementSpeedMax: 3
+  movementSpeedMax: 2.3
 --- !u!61 &2597120155978111589
 BoxCollider2D:
   m_ObjectHideFlags: 0
