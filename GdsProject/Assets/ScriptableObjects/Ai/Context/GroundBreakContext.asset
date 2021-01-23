@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a793cc20b03a0345841ff259e077a09, type: 3}
+  m_Script: {fileID: 11500000, guid: e0f320ca805211e4fb729b8209ef8707, type: 3}
   m_Name: GroundBreakContext
   m_EditorClassIdentifier: 
-  contextToConvert: {fileID: 11400000, guid: 8c32b2cf3e7da5a408121eff850f3be0, type: 2}
+  offset: {x: 0, y: 0, z: 0}
+  tagName: GroundBreak
