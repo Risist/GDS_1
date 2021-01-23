@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 1722619415}
   - component: {fileID: 1728268877}
   - component: {fileID: 4451939172437345535}
+  - component: {fileID: 335506772}
   m_Layer: 8
   m_Name: car
   m_TagString: Player
@@ -421,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementMode: 0
   movementSpeed: 0
+  textureXposition: 0
   jumpVelocityDamping: 0.00235
   initialJumpVelocity: 0.056
   gravity: 0.014
@@ -522,7 +524,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &4451939172437345535
 MonoBehaviour:
@@ -539,6 +541,19 @@ MonoBehaviour:
   throwers:
   - {fileID: 8482664953249686071}
   - {fileID: 5367993354533910265}
+--- !u!114 &335506772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083274500322666796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916639c310d894743bdb9ba9a14db16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnDelay: 3
 --- !u!1 &4483833954789963506
 GameObject:
   m_ObjectHideFlags: 0
