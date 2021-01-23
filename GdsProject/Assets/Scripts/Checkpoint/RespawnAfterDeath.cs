@@ -25,6 +25,7 @@ public class RespawnAfterDeath : MonoBehaviour
                 CheckpointManager.instance.StartCoroutine(Restart(healthController));
             }else
             {
+                LivesManager.instance.OpenGameOver();
                 // TODO run game over ui and after short delay move towards main menu
                 // just before call LivesManager.instance.ResetLives();
             }

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7404697978419532263
 Transform:
   m_ObjectHideFlags: 0
@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 862860653462340193}
   - component: {fileID: 4906427507355513204}
   - component: {fileID: 2490893602241440467}
+  - component: {fileID: 7434697238355905715}
   m_Layer: 0
   m_Name: hole 2
   m_TagString: Untagged
@@ -212,7 +213,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0034404993, y: -0.3545116}
+  m_Offset: {x: 0.015144289, y: -0.3545116}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -223,7 +224,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 0.8}
+  m_Size: {x: 1.2844173, y: 0.8}
   m_EdgeRadius: 0
 --- !u!114 &2490893602241440467
 MonoBehaviour:
@@ -239,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredMask:
     serializedVersion: 2
-    m_Bits: 1335
+    m_Bits: 1334
   damageDataOnce:
     damage: 0
     staggerIncrease: 0
@@ -249,6 +250,18 @@ MonoBehaviour:
   damageDataEnter:
     damage: 0
     staggerIncrease: 0
+--- !u!114 &7434697238355905715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241361147962255478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692201cb3a4525d468594b6c2db33d45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4508688332214187834
 GameObject:
   m_ObjectHideFlags: 0

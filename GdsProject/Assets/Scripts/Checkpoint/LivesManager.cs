@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LivesManager : MonoSingleton<LivesManager>
 {
@@ -12,10 +13,20 @@ public class LivesManager : MonoSingleton<LivesManager>
     static bool initialized;
 
     public bool hasAnyLives => currentLives > 0;
+    public GameObject deathObject;
 
     public void ResetLives()
     {
         currentLives = maxLives;
+    }
+
+    public void OpenGameOver()
+    {
+        deathObject.SetActive(true);
+    }
+    public void DeathScreanButton()
+    {
+        SceneManager.LoadScene(0);
     }
 
     // returns if still can Play
