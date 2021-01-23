@@ -128,6 +128,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 299265387607822714, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631706261023515525, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079132940137963099, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8067778416415888381, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
         type: 3}
       propertyPath: m_Name
@@ -848,7 +863,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddfc7af95feb3f419e731b5c3640d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneBuildIndex: 1
 --- !u!1 &1557447277
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,19 @@ public class GroundTileManager : MonoSingleton<GroundTileManager>
 {
     public GroundTileInstance[] groundtiles;
 
+    public int levelLenght
+    {
+        get
+        {
+            int sum = 0;
+            foreach(var it in groundtiles)
+            {
+                sum += it.width;
+            }
+            return sum;
+        }
+    }
+
     public bool GetTopPosition(float xTilePosition, out Vector3 position)
     {
         float begin;

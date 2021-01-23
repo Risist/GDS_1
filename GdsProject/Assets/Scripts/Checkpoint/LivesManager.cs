@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LivesManager : MonoSingleton<LivesManager>
 {
@@ -13,11 +14,15 @@ public class LivesManager : MonoSingleton<LivesManager>
     static bool initialized;
 
     public bool hasAnyLives => currentLives > 0;
+    
+    [Header("UI")]
     public GameObject deathObject;
+    public Text livesText;
 
     public void ResetLives()
     {
         currentLives = maxLives;
+        livesText.text = "" + currentLives;
     }
 
     public void OpenGameOver()
@@ -33,6 +38,7 @@ public class LivesManager : MonoSingleton<LivesManager>
     public bool LooseLive()
     {
         --currentLives;
+        livesText.text = "" + currentLives;
         return hasAnyLives;
     }
 
@@ -43,5 +49,7 @@ public class LivesManager : MonoSingleton<LivesManager>
             initialized = true;
             ResetLives();
         }
+
+        livesText.text = "" + currentLives;
     }
 }

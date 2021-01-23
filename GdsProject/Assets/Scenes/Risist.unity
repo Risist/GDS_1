@@ -358,6 +358,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemyTest
       objectReference: {fileID: 0}
+    - target: {fileID: 5573894359302125129, guid: c1a1cf28e9b03794bad7675f066fe6eb,
+        type: 3}
+      propertyPath: stateList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573894359302125129, guid: c1a1cf28e9b03794bad7675f066fe6eb,
+        type: 3}
+      propertyPath: stateList.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: d2741a5bcdeab3e4895443a7aa9cdee8,
+        type: 2}
     - target: {fileID: 5573894359302125130, guid: c1a1cf28e9b03794bad7675f066fe6eb,
         type: 3}
       propertyPath: m_RootOrder
