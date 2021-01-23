@@ -75,7 +75,12 @@ PrefabInstance:
     - target: {fileID: 4241361147962255478, guid: e0ae41ac7b9ae8346abbe4eeae5bb1e5,
         type: 3}
       propertyPath: m_Name
-      value: hole 1 Variant
+      value: hole LARGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567426601693378355, guid: e0ae41ac7b9ae8346abbe4eeae5bb1e5,
+        type: 3}
+      propertyPath: requiredMask.m_Bits
+      value: 1334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ae41ac7b9ae8346abbe4eeae5bb1e5, type: 3}

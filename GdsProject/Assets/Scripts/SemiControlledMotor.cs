@@ -17,6 +17,9 @@ public class SemiControlledMotor : MonoBehaviour
 
     private void Update()
     {
+        if (!_movementDirector)
+            return;
+
         Vector3 currentParentPosition = _movementDirector.transform.position;
 
         //Mathf.Sign()

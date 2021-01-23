@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3362799000902080367}
   - component: {fileID: 3362799000902080336}
+  - component: {fileID: 6537111866446401886}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3362799000902080366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 3362799001427420071}
   m_RootOrder: 0
@@ -70,8 +71,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 020813bba45ee1147852a816bf60d9a8, type: 3}
-  m_Color: {r: 1, g: 0.83026266, b: 0, a: 1}
+  m_Sprite: {fileID: -8625353118396212855, guid: 5b07129dddf82e546b6b45f5910db2a9,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -81,6 +83,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6537111866446401886
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799000902080366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b74b2597d29956446b59e9110d409337, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3362799001427420068
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +137,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3362799000902080367}
+  - {fileID: 1269212449718664083}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -131,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9c0726f9947e946b7ac0c235224f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: {x: 0, y: -10, z: 0}
+  force: {x: 0, y: -7, z: 0}
 --- !u!114 &2556325458356624121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059d4ca08b1d7af40944153114becf43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: -10, y: 0, z: 0}
+  speed: {x: -7, y: 0, z: 0}
 --- !u!50 &3362799001427420069
 Rigidbody2D:
   serializedVersion: 4
@@ -205,7 +227,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.3
 --- !u!114 &8139418982028378012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +253,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 4
+--- !u!1 &4954006367312328137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269212449718664083}
+  - component: {fileID: 6677165156099160820}
+  m_Layer: 0
+  m_Name: SpawnExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1269212449718664083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954006367312328137}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3362799001427420071}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6677165156099160820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954006367312328137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2f7b128206524da862382b3efafc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66, type: 3}

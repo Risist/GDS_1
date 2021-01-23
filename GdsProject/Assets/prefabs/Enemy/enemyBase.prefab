@@ -151,7 +151,7 @@ MonoBehaviour:
     damage: 0
     staggerIncrease: 0
   damageDataContinous:
-    damage: -100
+    damage: 100
     staggerIncrease: 0
   damageDataEnter:
     damage: 0
