@@ -20,6 +20,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     private void Start()
     {
         _playerMovement = GameObject.FindGameObjectWithTag("Player")?.GetComponent<CarMovementController>();
+        _playerMovement.textureXposition = lastCheckpoint;
     }
 
     public void RecordCheckpoint()
@@ -29,16 +30,12 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     public void ResetToLastCheckpoint()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
-
-        _playerMovement.textureXposition = lastCheckpoint;
     }
-    public void LoadNextLevel(int levelIndex)
+    public void LoadNextLevel()
     {
-        currentLevelId = levelIndex;
+        ++currentLevelId;
 
-        SceneManager.LoadScene(levelDatas[currentLevelId].buildIndex, LoadSceneMode.Single);
         lastCheckpoint = levelDatas[currentLevelId].initialCheckpoint;
-
-        _playerMovement.textureXposition = lastCheckpoint;
+        SceneManager.LoadScene(levelDatas[currentLevelId].buildIndex, LoadSceneMode.Single);
     }
 }
