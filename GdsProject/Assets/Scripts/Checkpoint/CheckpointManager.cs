@@ -36,6 +36,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
         ++currentLevelId;
 
         lastCheckpoint = levelDatas[currentLevelId].initialCheckpoint;
+        LivesManager.instance.ResetLives();
         SceneManager.LoadScene(levelDatas[currentLevelId].buildIndex, LoadSceneMode.Single);
     }
 }

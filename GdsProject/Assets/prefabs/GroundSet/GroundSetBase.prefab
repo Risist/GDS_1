@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8067778416415888382}
   - component: {fileID: 8067778416415888380}
   - component: {fileID: 5057561542351217988}
+  - component: {fileID: 5626221981199253758}
   m_Layer: 0
   m_Name: GroundSetBase
   m_TagString: Untagged
@@ -64,5 +65,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40473d8134ef2674b8339b1e63a21f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livesLeft: 0
-  initialCheckpoint: 200
+  levelDatas:
+  - buildIndex: 0
+    initialCheckpoint: 300
+  currentLevelId: 0
+--- !u!114 &5626221981199253758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8067778416415888381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6545500a85c931741bb6a8d86ebca4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLives: 3

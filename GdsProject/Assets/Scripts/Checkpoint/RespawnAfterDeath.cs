@@ -19,7 +19,15 @@ public class RespawnAfterDeath : MonoBehaviour
         healthController.onDeathCallback += (DamageData data) =>
         {
             healthController.gameObject.SetActive(false);
-            CheckpointManager.instance.StartCoroutine(Restart(healthController));
+
+            if (LivesManager.instance.LooseLive())
+            {
+                CheckpointManager.instance.StartCoroutine(Restart(healthController));
+            }else
+            {
+                // TODO run game over ui and after short delay move towards main menu
+                // just before call LivesManager.instance.ResetLives();
+            }
         };
     }
 
