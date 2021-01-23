@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   damageDataOnce:
     damage: 0
     staggerIncrease: 0

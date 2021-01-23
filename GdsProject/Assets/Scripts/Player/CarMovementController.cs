@@ -14,13 +14,19 @@ public class CarMovementController : MonoBehaviour
     public EMovementMode movementMode;
 
     [HideInInspector] public float movementSpeed;
-    float textureXposition;
+    [HideInInspector] public float textureXposition;
     float height;
 
     [Header("Jump")]
     public float jumpVelocityDamping;
     public float initialJumpVelocity;
     public float gravity;
+
+    public void ResetState()
+    {
+        jumpHeight = 0;
+        jumpVelocity = 0;
+    }
 
     float jumpHeight;
     float jumpVelocity;
@@ -32,6 +38,7 @@ public class CarMovementController : MonoBehaviour
     {
         _carWheels   = GetComponent<CarWheelsController>();
         _inputHolder = GetComponent<PlayerInputHolder>();
+
         ChangeCurrentMovementMode(movementMode);
     }
 
@@ -84,7 +91,7 @@ public class CarMovementController : MonoBehaviour
 
     private void Update()
     {
-        textureXposition += movementSpeed;
+        textureXposition += movementSpeed * Time.deltaTime * 400;
 
         movementModeUpdate();
     }

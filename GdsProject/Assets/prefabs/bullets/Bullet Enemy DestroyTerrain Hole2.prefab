@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3362799000902080367}
   - component: {fileID: 3362799000902080336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,11 +93,12 @@ GameObject:
   - component: {fileID: 4611949296764760295}
   - component: {fileID: 3362799001427420069}
   - component: {fileID: 1809542631362846750}
-  - component: {fileID: 7163732753382932786}
-  - component: {fileID: -5731687007957257185}
   - component: {fileID: 4246325560856384902}
   - component: {fileID: 6856673861186242595}
-  m_Layer: 0
+  - component: {fileID: 6512436551518334376}
+  - component: {fileID: 2570063796348815704}
+  - component: {fileID: 5868947240662576535}
+  m_Layer: 10
   m_Name: Bullet Enemy DestroyTerrain Hole2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,6 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   pointContext: {fileID: 11400000, guid: fa90f36d0d826684d995ae01b2cdc57b, type: 2}
+  cache: 1
+  cameraSpace: 1
 --- !u!50 &3362799001427420069
 Rigidbody2D:
   serializedVersion: 4
@@ -170,32 +173,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.15
---- !u!114 &7163732753382932786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362799001427420068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd886e9e9bdbf1141bf3c38a817c0bc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-5731687007957257185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362799001427420068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be4746ad1155ec0448cdaa1eb9e09d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 4241361147962255478, guid: a6e91a43e6e1c584d83921cf267dd2e5, type: 3}
-  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &4246325560856384902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,3 +198,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 4
+--- !u!114 &6512436551518334376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa50b2b4a7ec1f41a8991d7a2b8d3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4241361147962255478, guid: a6e91a43e6e1c584d83921cf267dd2e5, type: 3}
+  offset: {x: 0, y: 0.25, z: 0}
+--- !u!114 &2570063796348815704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d16d5b2afd92747ab2b2c7c96fbae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5868947240662576535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0f65a6838b398409a1cc7d13d378c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
+  destroyOnDeath: 1
+  tResetStagger:
+    cd: 1
+  staggerLimit: 0
+  staggerLevel: 0

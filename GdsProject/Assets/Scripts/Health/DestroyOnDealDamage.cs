@@ -6,6 +6,7 @@ public class DestroyOnDealDamage : MonoBehaviour
 {
     void OnDamageDealed()
     {
-        Destroy(gameObject,0.1f);
+        Destroy(gameObject, 0.05f);
     }
+
 }

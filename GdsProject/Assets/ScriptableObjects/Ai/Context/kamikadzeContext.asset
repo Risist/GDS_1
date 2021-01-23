@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cfb8f471d8e9346893d7d2fc5f5405, type: 3}
+  m_Name: kamikadzeContext
+  m_EditorClassIdentifier: 
+  localSpaceContext: {fileID: 11400000, guid: 7042457f4d465884f9b63959c5c6a9ff, type: 2}
+  transformedContext: {fileID: 11400000, guid: 15c4e6562994bae46ae0b8516663b79c, type: 2}

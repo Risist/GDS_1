@@ -54,6 +54,11 @@ public class HealthController : MonoBehaviour, IDamageable
         }
     }
 
+    void ResetState()
+    {
+        currentHealth = maxHealth;
+    }
+
     void Start()
     {
         onStaggerCallback += (DamageData data) => { };
