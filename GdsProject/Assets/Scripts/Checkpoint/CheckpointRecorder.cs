@@ -8,13 +8,14 @@ using UnityEngine;
 public class CheckpointRecorder : MonoBehaviour
 {
     public string activatingTag = "Player";
+    public string checkpointName = "A";
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
-        CheckpointManager.instance.RecordCheckpoint();
+        CheckpointManager.instance.RecordCheckpoint(checkpointName);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,6 +23,6 @@ public class CheckpointRecorder : MonoBehaviour
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
-        CheckpointManager.instance.RecordCheckpoint();
+        CheckpointManager.instance.RecordCheckpoint(checkpointName);
     }
 }

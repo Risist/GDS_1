@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7320105702972882661}
   - component: {fileID: 8765843260308857304}
   - component: {fileID: 1048625200086938629}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HumanExplosion Side_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

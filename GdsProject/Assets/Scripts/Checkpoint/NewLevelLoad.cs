@@ -17,7 +17,7 @@ public class NewLevelLoad : MonoBehaviour
             return;
 
         LivesManager.instance.GainLive(livesGain);
-        CheckpointManager.instance.LoadNextLevel();
+        //CheckpointManager.instance.LoadNextLevel();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +25,7 @@ public class NewLevelLoad : MonoBehaviour
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
-        CheckpointManager.instance.LoadNextLevel();
+        SummaryScrean.instance.Open(0);
+        //CheckpointManager.instance.LoadNextLevel();
     }
 }

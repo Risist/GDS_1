@@ -21,6 +21,7 @@ public class CarMovementController : MonoBehaviour
     public float jumpVelocityDamping;
     public float initialJumpVelocity;
     public float gravity;
+    public AudioSource jumpSound;
 
     public void ResetState()
     {
@@ -52,12 +53,12 @@ public class CarMovementController : MonoBehaviour
     }
     void UpdateJump()
     {
-        jumpHeight += jumpVelocity - gravity;
+        jumpHeight += (jumpVelocity - gravity) * Time.deltaTime;
         _carWheels.SetWheelDefaultPosition(textureXposition, jumpHeight);
     }
     void FixedUpdateJump()
     {
-        jumpVelocity = Mathf.MoveTowards(jumpVelocity, 0, jumpVelocityDamping);
+        jumpVelocity = Mathf.MoveTowards(jumpVelocity, 0, jumpVelocityDamping * Time.deltaTime);
 
         float currentHeight;
         GroundTileManager.instance.GetWorldHeight_TextureCoords(textureXposition, out currentHeight);
@@ -85,6 +86,7 @@ public class CarMovementController : MonoBehaviour
                 movementModeUpdate = UpdateJump;
                 movementModeFixedUpdate = FixedUpdateJump;
                 jumpVelocity = initialJumpVelocity;
+                jumpSound.PlayOneShot(jumpSound.clip);
                 break;
         }
     }
