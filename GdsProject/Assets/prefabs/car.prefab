@@ -428,9 +428,10 @@ MonoBehaviour:
   movementMode: 0
   movementSpeed: 0
   textureXposition: 0
-  jumpVelocityDamping: 0.00655
-  initialJumpVelocity: 0.15
-  gravity: 0.024
+  jumpVelocityDamping: 7
+  initialJumpVelocity: 22
+  gravity: 17.5
+  jumpSound: {fileID: 0}
 --- !u!114 &3083274500322666966
 MonoBehaviour:
   m_ObjectHideFlags: 0
