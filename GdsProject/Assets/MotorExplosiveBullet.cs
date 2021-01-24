@@ -16,6 +16,7 @@ public class MotorExplosiveBullet : MonoBehaviour
 
 
     public GameObject holePrefab;
+    public GameObject[] spawnedObjectsOnExplosion;
     public Vector3 holePrefabOffset;
 
     Vector3 _target;
@@ -38,6 +39,10 @@ public class MotorExplosiveBullet : MonoBehaviour
             spawnPos.y = _target.y + explosionCreationOffset;
 
             Instantiate(holePrefab, spawnPos, Quaternion.identity);
+            foreach (var item in spawnedObjectsOnExplosion)
+            {
+                Instantiate(item);
+            }
             Destroy(gameObject);
         }
     }

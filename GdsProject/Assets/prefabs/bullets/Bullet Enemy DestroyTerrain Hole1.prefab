@@ -170,6 +170,8 @@ MonoBehaviour:
   freeAreaTestOffset: 0.25
   holePrefab: {fileID: 4241361147962255478, guid: e0ae41ac7b9ae8346abbe4eeae5bb1e5,
     type: 3}
+  spawnedObjectsOnExplosion:
+  - {fileID: 8746525151853095140, guid: 982a7f9de5892c14db343f951963a7ea, type: 3}
   holePrefabOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &5157535602849507218
 GameObject:

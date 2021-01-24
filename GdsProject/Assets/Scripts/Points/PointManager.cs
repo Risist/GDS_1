@@ -13,6 +13,7 @@ public class PointManager : MonoSingleton<PointManager>
 
     [Header("UI")]
     public Text pointsText;
+    public AudioSource pointSound;
 
     public void ResetCheckpointPoints()
     {
@@ -29,6 +30,7 @@ public class PointManager : MonoSingleton<PointManager>
     public void GainPoints(int num)
     {
         points += num;
+        pointSound.PlayOneShot(pointSound.clip);
         UpdateText();
     }
 

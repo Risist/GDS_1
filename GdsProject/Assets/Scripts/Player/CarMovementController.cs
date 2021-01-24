@@ -21,6 +21,7 @@ public class CarMovementController : MonoBehaviour
     public float jumpVelocityDamping;
     public float initialJumpVelocity;
     public float gravity;
+    public AudioSource jumpSound;
 
     public void ResetState()
     {
@@ -85,6 +86,7 @@ public class CarMovementController : MonoBehaviour
                 movementModeUpdate = UpdateJump;
                 movementModeFixedUpdate = FixedUpdateJump;
                 jumpVelocity = initialJumpVelocity;
+                jumpSound.PlayOneShot(jumpSound.clip);
                 break;
         }
     }

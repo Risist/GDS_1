@@ -12,6 +12,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
         public int buildIndex;
         public float initialCheckpoint;
         public string levelName;
+        public float averageTime;
         [Range(0,1)]
         public float completionPercentStart;
 
@@ -58,9 +59,10 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
         levelCompletionFillBar.fillAmount = levelCompletion;
     }
 
-    public void RecordCheckpoint()
+    public void RecordCheckpoint(string checkpointName)
     {
         lastCheckpoint = _playerMovement.textureXposition;
+        currentLevelName.text = checkpointName;
         PointManager.instance.SaveCheckpointPoints();
     }
     public void ResetToLastCheckpoint()
