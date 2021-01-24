@@ -48,6 +48,9 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
         float time = lastCheckpointTime + _timer.ElapsedTime();
         currentTimeName.text = "" + (int)time/60 + ":" + (int)time % 60;
 
+        if (!_playerMovement)
+            return;
+
         float levelCompletion = _playerMovement.textureXposition / GroundTileManager.instance.levelLenght;
         float barFillPercent = Mathf.Lerp(
             levelDatas[currentLevelId].completionPercentStart,

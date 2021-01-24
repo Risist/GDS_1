@@ -24,6 +24,11 @@ public class LivesManager : MonoSingleton<LivesManager>
         currentLives = maxLives;
         livesText.text = "" + currentLives;
     }
+    public void GainLive(int i)
+    {
+        ++currentLives;
+        livesText.text = "" + currentLives;
+    }
 
     public void OpenGameOver()
     {
