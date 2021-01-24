@@ -10,6 +10,11 @@ public class DangerArea : MonoBehaviour
     public DangerManager.EDangerType dangerType;
     public string playerTag = "Player";
 
+    [Space]
+    public GameObject[] areaEnemies;
+    public int bonusPointsForEnemies;
+    bool pointsGained;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag(playerTag))
@@ -19,5 +24,21 @@ public class DangerArea : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(playerTag))
             DangerManager.instance.UnsetDanger(dangerType);
+    }
+
+    bool IsAnyEnemyAlive()
+    {
+        foreach (var it in areaEnemies)
+            if (it)
+                return true;
+        return false;
+    }
+    private void Update()
+    {
+        if(!pointsGained && ! IsAnyEnemyAlive())
+        {
+            PointManager.instance.GainPoints(bonusPointsForEnemies);
+            pointsGained = true;
+        }
     }
 }

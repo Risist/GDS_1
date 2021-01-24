@@ -22,11 +22,10 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     public int currentLevelId;
 
     static float lastCheckpoint;
-    static float lastCheckpointTime;
 
     CarMovementController _playerMovement;
 
-    MinimalTimer _timer = new MinimalTimer(); 
+    static MinimalTimer _timer = new MinimalTimer(); 
 
     [Header("UI")]
     public Text currentLevelName;
@@ -40,12 +39,11 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
             _playerMovement.textureXposition = lastCheckpoint;
 
         currentLevelName.text = levelDatas[currentLevelId].levelName;
-        _timer.Restart();
     }
 
     private void Update()
     {
-        float time = lastCheckpointTime + _timer.ElapsedTime();
+        float time = _timer.ElapsedTime();
         currentTimeName.text = "" + (int)time/60 + ":" + (int)time % 60;
 
         if (!_playerMovement)
@@ -63,18 +61,18 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     public void RecordCheckpoint()
     {
         lastCheckpoint = _playerMovement.textureXposition;
-        lastCheckpointTime += _timer.ElapsedTime();
-        _timer.Restart();
+        PointManager.instance.SaveCheckpointPoints();
     }
     public void ResetToLastCheckpoint()
     {
+        PointManager.instance.SaveCheckpointPoints();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
     }
     public void LoadNextLevel()
     {
         ++currentLevelId;
-        lastCheckpointTime += _timer.ElapsedTime();
         _timer.Restart();
+        PointManager.instance.SaveCheckpointPoints();
 
         lastCheckpoint = levelDatas[currentLevelId].initialCheckpoint;
         LivesManager.instance.ResetLives();
@@ -83,8 +81,8 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     public void LoadFirstLevel()
     {
         currentLevelId = 0;
-        lastCheckpointTime = 0;
         _timer.Restart();
+        PointManager.instance.ResetCheckpointPoints();
 
         lastCheckpoint = levelDatas[currentLevelId].initialCheckpoint;
         LivesManager.instance.ResetLives();

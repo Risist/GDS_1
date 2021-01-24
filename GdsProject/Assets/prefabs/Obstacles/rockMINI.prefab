@@ -75,7 +75,12 @@ PrefabInstance:
     - target: {fileID: 5011754858810847023, guid: 74af3d9f592b701429725d961a9d017d,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle1 Variant
+      value: rockMINI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676468511198792282, guid: 74af3d9f592b701429725d961a9d017d,
+        type: 3}
+      propertyPath: points
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74af3d9f592b701429725d961a9d017d, type: 3}

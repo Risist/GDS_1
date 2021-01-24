@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: hole LARGE
       objectReference: {fileID: 0}
+    - target: {fileID: 4837039202698835189, guid: e0ae41ac7b9ae8346abbe4eeae5bb1e5,
+        type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8567426601693378355, guid: e0ae41ac7b9ae8346abbe4eeae5bb1e5,
         type: 3}
       propertyPath: requiredMask.m_Bits
