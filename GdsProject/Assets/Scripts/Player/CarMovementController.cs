@@ -53,12 +53,12 @@ public class CarMovementController : MonoBehaviour
     }
     void UpdateJump()
     {
-        jumpHeight += jumpVelocity - gravity;
+        jumpHeight += (jumpVelocity - gravity) * Time.deltaTime;
         _carWheels.SetWheelDefaultPosition(textureXposition, jumpHeight);
     }
     void FixedUpdateJump()
     {
-        jumpVelocity = Mathf.MoveTowards(jumpVelocity, 0, jumpVelocityDamping);
+        jumpVelocity = Mathf.MoveTowards(jumpVelocity, 0, jumpVelocityDamping * Time.deltaTime);
 
         float currentHeight;
         GroundTileManager.instance.GetWorldHeight_TextureCoords(textureXposition, out currentHeight);
