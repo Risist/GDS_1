@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d35958e62c90204eb65d97fc57747e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPositionInfluence: 0.775
+  cameraPositionInfluence: 0.65
 --- !u!1 &5057829339354834068
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,7 +47,13 @@ public class HealthController : MonoBehaviour, IDamageable
 
         if (currentHealth > 0)
             onDamageCallback(data);
-        else if (!_destroyed)
+        else
+            Kill(data);
+    }
+
+    public void Kill(DamageData data)
+    {
+        if (!_destroyed)
         {
             onDeathCallback(data);
             _destroyed = true;
