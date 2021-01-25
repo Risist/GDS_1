@@ -36,7 +36,7 @@ public class UfoController : MonoBehaviour
     }
     void Update()
     {
-        Vector3 finalPosition = Vector3.MoveTowards(transform.localPosition, _targetPosition, movementSpeed * Time.deltaTime);
+        Vector3 finalPosition = Vector3.MoveTowards(transform.localPosition, _targetPosition, _movementSpeed * Time.deltaTime);
         finalPosition.z = transform.localPosition.z;
         transform.localPosition = finalPosition;
     }
