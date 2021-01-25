@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2565005151730367031
+--- !u!1001 &3651079675245825777
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -111,7 +111,7 @@ PrefabInstance:
     - target: {fileID: 7981163570168515711, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: m_Name
-      value: UFO 1 NO SUICIDE pkt przed A
+      value: enemyBase Variant 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc81f646c1afbc84eb9c4fb32e4249d3, type: 3}

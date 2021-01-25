@@ -118,9 +118,9 @@ GameObject:
   - component: {fileID: 1809542631362846750}
   - component: {fileID: 8139418982028378012}
   - component: {fileID: 676993958021113897}
-  - component: {fileID: 3414316696954221414}
+  - component: {fileID: 2957331619754506906}
   m_Layer: 0
-  m_Name: Bullet Enemy Normal LEFT
+  m_Name: Bullet Enemy Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9c0726f9947e946b7ac0c235224f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: {x: -5, y: -7, z: 0}
+  force: {x: 0, y: -3, z: 0}
 --- !u!114 &2556325458356624121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059d4ca08b1d7af40944153114becf43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: -5, y: 0, z: 0}
+  speed: {x: -3, y: 0, z: 0}
 --- !u!50 &3362799001427420069
 Rigidbody2D:
   serializedVersion: 4
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 4
---- !u!114 &3414316696954221414
+--- !u!114 &2957331619754506906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,6 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8540b859427734541ab1e1e94f333e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionCreationOffset: 0
+  heightObjectTag: GroundHeight
 --- !u!1 &4954006367312328137
 GameObject:
   m_ObjectHideFlags: 0
