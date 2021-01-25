@@ -25,8 +25,8 @@ namespace Ai
         [Header("Working params")]
         [SerializeField] int currentStateIndex = 0;
 
-        public SimpleState currentState => RangedInt.InRange(currentStateIndex, 0, stateList.Length) ?
-            stateList[currentStateIndex] :
+        public SimpleState currentState => RangedInt.InRange(currentStateIndex, 0, runtimeStateList.Length) ?
+            runtimeStateList[currentStateIndex] :
             null;
 
         private void Start()
@@ -61,7 +61,7 @@ namespace Ai
         // TODO: change name for better one
         bool CheckFinishAction()
         {
-            if (currentStateIndex >= stateList.Length)
+            if (currentStateIndex >= runtimeStateList.Length)
             {
                 switch (finishAction)
                 {
