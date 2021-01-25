@@ -13,6 +13,8 @@ namespace Ai
     {
         public Context target;
         public bool cachePosition;
+        public bool bOverrideSpeed;
+        public float speed;
 
         Vector3 targetPosition;
 
@@ -29,7 +31,10 @@ namespace Ai
             if(!cachePosition)
                 targetPosition = ((IPointContext)target).GetPoint();
 
-            _ufoController.SetMovementTarget(targetPosition);
+            if (bOverrideSpeed)
+                _ufoController.SetMovementTarget(targetPosition, speed);
+            else
+                _ufoController.SetMovementTarget(targetPosition);
         }
     }
 }

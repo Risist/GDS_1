@@ -5,6 +5,7 @@ using UnityEngine;
 public class UfoController : MonoBehaviour
 {
     public float movementSpeed;
+    float _movementSpeed;
 
     BulletThrower _bulletThrower; 
     Vector3 _targetPosition;
@@ -19,6 +20,12 @@ public class UfoController : MonoBehaviour
     public void SetMovementTarget(Vector3 targetPosition)
     {
         _targetPosition = targetPosition;
+        _movementSpeed = movementSpeed;
+    }
+    public void SetMovementTarget(Vector3 targetPosition, float movementSpeed)
+    {
+        _targetPosition = targetPosition;
+        _movementSpeed = movementSpeed;
     }
 
     #endregion

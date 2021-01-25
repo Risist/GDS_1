@@ -11,10 +11,16 @@ namespace Ai
     public class MoveToState : UfoState
     {
         public Vector3 offsetFromTarget;
+        public bool bOverrideSpeed;
+        public float speed;
         public override void OnUpdate()
         {
             base.OnUpdate();
-            _ufoController.SetMovementTarget(offsetFromTarget);
+            if(bOverrideSpeed)
+                _ufoController.SetMovementTarget(offsetFromTarget, speed);
+            else
+                _ufoController.SetMovementTarget(offsetFromTarget);
+
         }
     }
 }
