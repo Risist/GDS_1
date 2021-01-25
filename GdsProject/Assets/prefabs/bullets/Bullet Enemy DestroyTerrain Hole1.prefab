@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c7e6dca2d6fdf40b3cbc953964ab83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 4
+  delay: 1.5
 --- !u!114 &8089238870583437544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetContext: {fileID: 11400000, guid: 8c32b2cf3e7da5a408121eff850f3be0, type: 2}
   heightObjectTag: GroundHeight
-  speed: 3
+  speed: 7
   explosionCreationOffset: 0.25
   requiredFreeArea: 3
   freeAreaTestOffset: 0.25

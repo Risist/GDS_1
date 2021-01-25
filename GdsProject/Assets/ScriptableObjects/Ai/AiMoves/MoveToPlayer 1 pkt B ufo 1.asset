@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6845acd2f077814ab537cfe88d74210, type: 3}
-  m_Name: MoveToPlayer
+  m_Name: MoveToPlayer 1 pkt B ufo 1
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   maxExecutionTime:
-    cd: 1.7
+    cd: 2.5
   target: {fileID: 11400000, guid: b604208661d2cc949b08a09b216ce5ec, type: 2}
   cachePosition: 1
   bOverrideSpeed: 1
-  speed: 5
+  speed: 4.5

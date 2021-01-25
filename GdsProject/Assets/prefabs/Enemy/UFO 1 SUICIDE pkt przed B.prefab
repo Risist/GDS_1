@@ -20,12 +20,12 @@ PrefabInstance:
     - target: {fileID: 7981163570168515709, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.38
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570168515709, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.38
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570168515709, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
@@ -81,13 +81,13 @@ PrefabInstance:
         type: 3}
       propertyPath: stateList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: bae722ff3c8462946b04558c4da9315d,
+      objectReference: {fileID: 11400000, guid: 652bf5ea007229a4ba93abf898a9d764,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: b4e4855f039b86a4390cf83a7946362b,
+      objectReference: {fileID: 11400000, guid: 11cfc05e8bb241a4da91c4908df275ec,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
@@ -99,30 +99,30 @@ PrefabInstance:
         type: 3}
       propertyPath: stateList.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 5eb2958695b6f5746b3218bf7d94d39e,
+      objectReference: {fileID: 11400000, guid: 925ac3da5d49a294b89593652fc82b23,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 20affe81f5440e94dbd57d071f74e5e3,
+      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
+      objectReference: {fileID: 11400000, guid: a7b2ad2e0accae6488a256c7284b01c4,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 584d8e1351e0e114181c3028b9ac88fe,
+      objectReference: {fileID: 11400000, guid: d2741a5bcdeab3e4895443a7aa9cdee8,
         type: 2}
     - target: {fileID: 7981163570168515711, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: m_Name
-      value: UFO 1 NO SUICIDE pkt przed A
+      value: UFO 1 SUICIDE pkt przed B
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570461809104, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}

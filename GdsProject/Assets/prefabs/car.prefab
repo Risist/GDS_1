@@ -506,8 +506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0f65a6838b398409a1cc7d13d378c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 100
-  maxHealth: 100
+  currentHealth: 100000
+  maxHealth: 100000
   destroyOnDeath: 1
   tResetStagger:
     cd: 1
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3362799001427420068, guid: d0fc06367c4eeb643a5be94552193ed9, type: 3}
   shootRate:
-    cd: 0.15
+    cd: 0.2
   parent: 1
 --- !u!1 &6609320136059627582
 GameObject:
