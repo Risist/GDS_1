@@ -13,7 +13,6 @@ namespace Ai
         public enum EFinishAction
         {
             EDestroy,
-            EKill,
             EDisable,
             EStayInLastState,
             ELoop
@@ -69,13 +68,6 @@ namespace Ai
                     case EFinishAction.EDestroy:
                         Destroy(gameObject);
                         return false;
-                    case EFinishAction.EKill:
-                    {
-                        var hp = GetComponent<HealthController>();
-                        if(hp)
-                            hp.Kill(new DamageData());
-                        return false;
-                    }
                     case EFinishAction.EDisable:
                         enabled = false;
                         return false;
