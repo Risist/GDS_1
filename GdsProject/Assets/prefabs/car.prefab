@@ -733,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3362799001427420068, guid: 45764a0898c81c84d94da70f74e8b61c, type: 3}
   shootRate:
-    cd: 0.15
+    cd: 0.45
   parent: 1
 --- !u!1 &5031726869203674994
 GameObject:

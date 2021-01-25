@@ -20,6 +20,8 @@ namespace Ai
         public SimpleState[] stateList;
         public EFinishAction finishAction;
 
+        SimpleState[] runtimeStateList;
+
         [Header("Working params")]
         [SerializeField] int currentStateIndex = 0;
 
@@ -29,10 +31,13 @@ namespace Ai
 
         private void Start()
         {
-            foreach(var it in stateList)
+            runtimeStateList = new SimpleState[stateList.Length];
+            for(int i = 0; i < stateList.Length; ++i)
             {
-                it.controller = this;
+                runtimeStateList[i] = Instantiate(stateList[i]);
+                runtimeStateList[i].controller = this;
             }
+
             Debug.Assert(currentState);
             currentState.OnBegin();
         }

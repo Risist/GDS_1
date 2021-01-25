@@ -17,7 +17,7 @@ public class BulletThrower : MonoBehaviour
 
     public GameObject ProceedShoot()
     {
-        if(gameObject && shootRate.IsReadyRestart())
+        if(Time.timeScale != 0 && gameObject && shootRate.IsReadyRestart())
         {
             var obj = Instantiate(bullet, transform.position, transform.rotation);
             if (parent)

@@ -22,6 +22,7 @@ public class SummaryScrean : MonoSingleton<SummaryScrean>
 
     public void Open(float time)
     {
+        Time.timeScale = 0;
         summaryScrean.SetActive(true);
         var carMovement = GameObject.FindGameObjectWithTag("Player")?.GetComponent<CarMovementController>();
         carMovement.enabled = false;
@@ -57,11 +58,13 @@ public class SummaryScrean : MonoSingleton<SummaryScrean>
 
     public void NextLevel()
     {
+        Time.timeScale = 1;
         CheckpointManager.instance.LoadNextLevel();
     }
 
     public void BackToMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 }
