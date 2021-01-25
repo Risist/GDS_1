@@ -266,6 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8540b859427734541ab1e1e94f333e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionCreationOffset: 0.25
+  heightObjectTag: GroundHeight
 --- !u!1 &4954006367312328137
 GameObject:
   m_ObjectHideFlags: 0

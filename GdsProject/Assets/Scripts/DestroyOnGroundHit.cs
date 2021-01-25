@@ -1,11 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ai;
+using Ai.Eqs;
 
 public class DestroyOnGroundHit : MonoBehaviour
 {
-    void OnGroundHit(float height)
+    public float explosionCreationOffset = 0.25f;
+    public string heightObjectTag = "GroundHeight";
+    float height;
+
+    private void Start()
     {
-        Destroy(gameObject);
+        var heightObject = GameObject.FindGameObjectWithTag(heightObjectTag)?.transform;
+        height = heightObject.position.y - explosionCreationOffset;
+    }
+
+    void Update()
+    {
+        if (transform.position.y < height)
+        {
+            Destroy(gameObject);
+        }
     }
 }
