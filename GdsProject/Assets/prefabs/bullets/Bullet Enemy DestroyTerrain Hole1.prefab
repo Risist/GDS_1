@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetContext: {fileID: 11400000, guid: 8c32b2cf3e7da5a408121eff850f3be0, type: 2}
   heightObjectTag: GroundHeight
-  speed: 7
+  speed: 3
   explosionCreationOffset: 0.25
   requiredFreeArea: 3
   freeAreaTestOffset: 0.25

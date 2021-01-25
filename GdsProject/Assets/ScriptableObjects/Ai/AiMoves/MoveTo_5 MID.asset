@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483d89b65be91b0488aeaf1f11ba19d7, type: 3}
-  m_Name: MoveTo_3
+  m_Name: MoveTo_5 MID
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   maxExecutionTime:
     cd: 1
-  offsetFromTarget: {x: 8, y: 0, z: 0}
+  offsetFromTarget: {x: -3, y: 0.5, z: 0}

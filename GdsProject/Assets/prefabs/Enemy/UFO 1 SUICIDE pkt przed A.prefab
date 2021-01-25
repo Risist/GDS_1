@@ -64,8 +64,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
+      propertyPath: finishAction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
       propertyPath: stateList.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
@@ -77,19 +82,19 @@ PrefabInstance:
         type: 3}
       propertyPath: stateList.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 52cd0174c63fd2344aca757c825350a4,
+      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 652bf5ea007229a4ba93abf898a9d764,
+      objectReference: {fileID: 11400000, guid: 52cd0174c63fd2344aca757c825350a4,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 52cd0174c63fd2344aca757c825350a4,
+      objectReference: {fileID: 11400000, guid: 652bf5ea007229a4ba93abf898a9d764,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
@@ -97,10 +102,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
         type: 2}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
+      propertyPath: stateList.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: a526b9922928c784787c204d1707349d,
+        type: 2}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
+      propertyPath: stateList.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: d2741a5bcdeab3e4895443a7aa9cdee8,
+        type: 2}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
+      propertyPath: stateList.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
+        type: 2}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
+      propertyPath: stateList.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
+        type: 2}
     - target: {fileID: 7981163570168515711, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: m_Name
-      value: enemyTest
+      value: UFO 1 SUICIDE pkt przed A
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc81f646c1afbc84eb9c4fb32e4249d3, type: 3}
