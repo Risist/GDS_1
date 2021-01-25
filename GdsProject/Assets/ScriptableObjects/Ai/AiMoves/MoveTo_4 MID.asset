@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   maxExecutionTime:
-    cd: 1
+    cd: 2
   offsetFromTarget: {x: 2, y: 2.5, z: 0}
+  bOverrideSpeed: 0
+  speed: 0
