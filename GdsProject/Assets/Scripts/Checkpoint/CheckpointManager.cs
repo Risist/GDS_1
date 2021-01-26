@@ -86,7 +86,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     }
     public void LoadFirstLevel()
     {
-        currentLevelId = 1;
+        currentLevelId = 0;
         _timer.Restart();
         PointManager.instance.ResetCheckpointPoints();
 
