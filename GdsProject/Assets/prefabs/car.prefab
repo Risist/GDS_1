@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _offsetPercent: 0
-  offsetChangeSpeed: 0.0025
+  offsetChangeSpeed: 0.9
   offsetMin: 7
   movementSpeedMin: 1.3
   offsetMax: 1

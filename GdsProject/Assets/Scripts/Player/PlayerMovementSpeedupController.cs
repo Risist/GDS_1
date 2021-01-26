@@ -45,11 +45,11 @@ public class PlayerMovementSpeedupController : MonoBehaviour
     private void Update()
     {
         if (_inputHolder.forwardInput)
-            offsetPercent = Mathf.MoveTowards(offsetPercent, 1, offsetChangeSpeed);
+            offsetPercent = Mathf.MoveTowards(offsetPercent, 1, offsetChangeSpeed * Time.deltaTime);
         else if (_inputHolder.backwardInput)
-            offsetPercent = Mathf.MoveTowards(offsetPercent, 0, offsetChangeSpeed);
+            offsetPercent = Mathf.MoveTowards(offsetPercent, 0, offsetChangeSpeed * Time.deltaTime);
         else
-            offsetPercent = Mathf.MoveTowards(offsetPercent, 0.5f, offsetChangeSpeed);
+            offsetPercent = Mathf.MoveTowards(offsetPercent, 0.5f, offsetChangeSpeed * Time.deltaTime);
     }
 
 
