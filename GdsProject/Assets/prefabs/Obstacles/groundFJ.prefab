@@ -300,6 +300,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 37
       objectReference: {fileID: 0}
+    - target: {fileID: 4740538959903302549, guid: 018928ce2acbf4342bbaaa71e59b86cc,
+        type: 3}
+      propertyPath: m_Text
+      value: J
+      objectReference: {fileID: 0}
     - target: {fileID: 6369741216576621653, guid: 018928ce2acbf4342bbaaa71e59b86cc,
         type: 3}
       propertyPath: m_RootOrder
