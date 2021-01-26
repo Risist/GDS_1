@@ -90,43 +90,43 @@ PrefabInstance:
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 11cfc05e8bb241a4da91c4908df275ec,
+      objectReference: {fileID: 11400000, guid: 20affe81f5440e94dbd57d071f74e5e3,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 925ac3da5d49a294b89593652fc82b23,
+      objectReference: {fileID: 11400000, guid: b4e4855f039b86a4390cf83a7946362b,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 11cfc05e8bb241a4da91c4908df275ec,
+      objectReference: {fileID: 11400000, guid: 2a643fe141c25d74fb981112af2a4d0f,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
+      objectReference: {fileID: 11400000, guid: 652bf5ea007229a4ba93abf898a9d764,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: bae722ff3c8462946b04558c4da9315d,
+      objectReference: {fileID: 11400000, guid: d78299ce6aeae3640a9f3d7c11bdf29e,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: stateList.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 925ac3da5d49a294b89593652fc82b23,
+      objectReference: {fileID: 11400000, guid: a7b2ad2e0accae6488a256c7284b01c4,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
@@ -138,12 +138,24 @@ PrefabInstance:
         type: 3}
       propertyPath: stateList.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 63be69ca0d167204a9edaf13d939c299,
+      objectReference: {fileID: 11400000, guid: bae722ff3c8462946b04558c4da9315d,
+        type: 2}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
+      propertyPath: stateList.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: a526b9922928c784787c204d1707349d,
+        type: 2}
+    - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
+        type: 3}
+      propertyPath: stateList.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 584d8e1351e0e114181c3028b9ac88fe,
         type: 2}
     - target: {fileID: 7981163570168515711, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
       propertyPath: m_Name
-      value: UFO 3 pkt E
+      value: UFO 3 przed pkt N 2
       objectReference: {fileID: 0}
     - target: {fileID: 7981163570461809104, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}

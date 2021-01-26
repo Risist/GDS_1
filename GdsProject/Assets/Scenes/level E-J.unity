@@ -408,21 +408,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470604, guid: 6de068cf60b543b44a3bd49043c7e6c9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470604, guid: 6de068cf60b543b44a3bd49043c7e6c9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470604, guid: 6de068cf60b543b44a3bd49043c7e6c9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6659122242825470606, guid: 6de068cf60b543b44a3bd49043c7e6c9,
         type: 3}
       propertyPath: m_Name
@@ -1184,21 +1169,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470604, guid: a43df5aa544a9574489f57b96d4c14c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470604, guid: a43df5aa544a9574489f57b96d4c14c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470604, guid: a43df5aa544a9574489f57b96d4c14c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6659122242825470606, guid: a43df5aa544a9574489f57b96d4c14c2,
         type: 3}
@@ -2165,11 +2135,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UFO 3 przed pkt H
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470607, guid: 6d1d869c2a25b074ea7b27ea108b20a4,
-        type: 3}
-      propertyPath: stateList.Array.size
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6659122242825470607, guid: 6d1d869c2a25b074ea7b27ea108b20a4,
         type: 3}
@@ -3701,14 +3666,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1722619415, guid: 9933dcb89018b6044a3461899e9b848d, type: 3}
-      propertyPath: maxHealth
-      value: 100000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722619415, guid: 9933dcb89018b6044a3461899e9b848d, type: 3}
-      propertyPath: currentHealth
-      value: 100000
-      objectReference: {fileID: 0}
     - target: {fileID: 3083274500322666795, guid: 9933dcb89018b6044a3461899e9b848d,
         type: 3}
       propertyPath: m_RootOrder
