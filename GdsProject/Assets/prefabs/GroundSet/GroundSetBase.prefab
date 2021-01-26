@@ -3018,7 +3018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelDatas:
   - buildIndex: 1
-    initialCheckpoint: 620
+    initialCheckpoint: 570
     levelName: 
     averageTime: 0
     completionPercentStart: 0
