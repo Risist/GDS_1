@@ -1837,7 +1837,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HighScore
+  m_Text: TopRecords
 --- !u!1 &4775960607688960237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,7 +2712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000000
+  m_Text: 00:00
 --- !u!1 &7323643473808044148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,6 +3039,7 @@ MonoBehaviour:
   currentLevelName: {fileID: 8424760236300046000}
   currentTimeName: {fileID: 5748537680463969304}
   levelCompletionFillBar: {fileID: 2743037579557715462}
+  topRecordText: {fileID: 5536068021617740409}
 --- !u!114 &5626221981199253758
 MonoBehaviour:
   m_ObjectHideFlags: 0
