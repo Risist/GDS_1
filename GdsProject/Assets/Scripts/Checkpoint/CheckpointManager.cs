@@ -32,6 +32,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     public Text currentLevelName;
     public Text currentTimeName;
     public Image levelCompletionFillBar;
+    public Text topRecordText;
 
     private void Start()
     {
@@ -40,6 +41,9 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
             _playerMovement.textureXposition = lastCheckpoint;
 
         currentLevelName.text = levelDatas[currentLevelId].levelName;
+
+        float topRecordTime = levelDatas[currentLevelId].averageTime;
+        topRecordText.text = (int)topRecordTime / 60 + ":" + (int)topRecordTime % 60;
     }
 
     private void Update()
