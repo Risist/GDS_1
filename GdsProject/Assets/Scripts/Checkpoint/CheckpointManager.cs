@@ -60,7 +60,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
             levelDatas[currentLevelId].completionPercentFinish,
             levelCompletion);
 
-        levelCompletionFillBar.fillAmount = levelCompletion;
+        levelCompletionFillBar.fillAmount = barFillPercent;
     }
 
     public void RecordCheckpoint(string checkpointName)
@@ -86,7 +86,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
     }
     public void LoadFirstLevel()
     {
-        currentLevelId = 0;
+        currentLevelId = 1;
         _timer.Restart();
         PointManager.instance.ResetCheckpointPoints();
 

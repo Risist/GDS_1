@@ -21,8 +21,8 @@ public class DamageOnCollision : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (!enabled)
-            return;
+        /*if (!enabled)
+            return;*/
 
         if ((requiredMask.value & (1 << other.gameObject.layer)) == 0)
             return;
@@ -43,8 +43,8 @@ public class DamageOnCollision : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!enabled)
-            return;
+        /*if (!enabled)
+            return;*/
 
         if ((requiredMask.value & (1 << other.gameObject.layer)) == 0)
             return;
@@ -66,8 +66,8 @@ public class DamageOnCollision : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (!enabled)
-            return;
+        /*if (!enabled)
+            return;*/
 
         if ((requiredMask.value & (1 << collision.gameObject.layer)) == 0)
             return;
@@ -87,8 +87,8 @@ public class DamageOnCollision : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!enabled)
-            return;
+        /*if (!enabled)
+            return;*/
 
         if ((requiredMask.value & (1 << collision.gameObject.layer)) == 0)
             return;
