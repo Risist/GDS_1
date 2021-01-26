@@ -3019,20 +3019,20 @@ MonoBehaviour:
   levelDatas:
   - buildIndex: 1
     initialCheckpoint: 570
-    levelName: 
-    averageTime: 0
+    levelName: A
+    averageTime: 80
     completionPercentStart: 0
     completionPercentFinish: 0.333333
   - buildIndex: 2
     initialCheckpoint: 600
-    levelName: 
-    averageTime: 0
+    levelName: E
+    averageTime: 80
     completionPercentStart: 0.33333334
     completionPercentFinish: 0.6666666
   - buildIndex: 3
     initialCheckpoint: 600
-    levelName: 
-    averageTime: 0
+    levelName: J
+    averageTime: 80
     completionPercentStart: 0.666666
     completionPercentFinish: 1
   currentLevelId: 0
