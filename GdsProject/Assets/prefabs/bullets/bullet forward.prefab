@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 1809542631362846750}
   - component: {fileID: 8139418982028378012}
   - component: {fileID: 4276818393566213447}
-  - component: {fileID: 2371856736591672422}
   m_Layer: 12
   m_Name: bullet forward
   m_TagString: Untagged
@@ -233,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredMask:
     serializedVersion: 2
-    m_Bits: 1591
+    m_Bits: 567
   damageDataOnce:
     damage: 0
     staggerIncrease: 0
@@ -283,20 +282,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c7e6dca2d6fdf40b3cbc953964ab83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.27
---- !u!58 &2371856736591672422
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362799001427420068}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.15
+  delay: 0.28
