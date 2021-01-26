@@ -3018,10 +3018,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelDatas:
   - buildIndex: 1
-    initialCheckpoint: 300
+    initialCheckpoint: 620
     levelName: 
     averageTime: 0
     completionPercentStart: 0
+    completionPercentFinish: 0.333333
+  - buildIndex: 2
+    initialCheckpoint: 600
+    levelName: 
+    averageTime: 0
+    completionPercentStart: 0.33333334
+    completionPercentFinish: 0.6666666
+  - buildIndex: 3
+    initialCheckpoint: 600
+    levelName: 
+    averageTime: 0
+    completionPercentStart: 0.666666
     completionPercentFinish: 1
   currentLevelId: 0
   currentLevelName: {fileID: 8424760236300046000}
