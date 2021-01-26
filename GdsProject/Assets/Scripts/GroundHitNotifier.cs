@@ -11,7 +11,7 @@ public class GroundHitNotifier : MonoBehaviour
     private void Start()
     {
         var heightObject = GameObject.FindGameObjectWithTag(heightObjectTag)?.transform;
-        height = heightObject.position.y - explosionCreationOffset;
+        height = heightObject.position.y + explosionCreationOffset;
     }
 
     void Update()

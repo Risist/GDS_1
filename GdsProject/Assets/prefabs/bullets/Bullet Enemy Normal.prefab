@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 1839147164949002596}
   - component: {fileID: 7869651858944721471}
   - component: {fileID: 1765256702009154902}
+  - component: {fileID: 9145813415832020974}
   m_Layer: 0
   m_Name: Bullet Enemy Normal
   m_TagString: Untagged
@@ -313,6 +314,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
+--- !u!114 &9145813415832020974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0f65a6838b398409a1cc7d13d378c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+  destroyOnDeath: 1
+  tResetStagger:
+    cd: 1
+  staggerLimit: 0
+  staggerLevel: 0
 --- !u!1 &4954006367312328137
 GameObject:
   m_ObjectHideFlags: 0

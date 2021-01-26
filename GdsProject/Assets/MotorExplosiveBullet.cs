@@ -20,16 +20,8 @@ public class MotorExplosiveBullet : MonoBehaviour
     public Vector3 holePrefabOffset;
 
     Vector3 _target;
-    void Start()
-    {
-        _target = ((IPointContext)targetContext).GetPoint();
 
-        var heightObject = GameObject.FindGameObjectWithTag(heightObjectTag)?.transform;
-        _target.y = heightObject.position.y - explosionCreationOffset;
-        _target = ObstacleMarker.FindClosestFreePosition(_target, requiredFreeArea, freeAreaTestOffset);
-    }
-
-    public void OnGroundHit(float x)
+    void OnGroundHit(float x)
     {
         Vector3 spawnPos = transform.position;
         spawnPos.y = _target.y + explosionCreationOffset;
@@ -42,8 +34,18 @@ public class MotorExplosiveBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void RefreshTarget()
+    {
+        _target = ((IPointContext)targetContext).GetPoint();
+
+        var heightObject = GameObject.FindGameObjectWithTag(heightObjectTag)?.transform;
+        _target.y = heightObject.position.y - explosionCreationOffset;
+        _target = ObstacleMarker.FindClosestFreePosition(_target, requiredFreeArea, freeAreaTestOffset);
+    }
+
     void Update()
     {
+        RefreshTarget();
         transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
     }
 }
