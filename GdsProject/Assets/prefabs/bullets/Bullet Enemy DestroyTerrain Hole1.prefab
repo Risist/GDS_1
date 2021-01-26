@@ -58,6 +58,9 @@ GameObject:
   - component: {fileID: 6856673861186242595}
   - component: {fileID: 8089238870583437544}
   - component: {fileID: 1856204293333566367}
+  - component: {fileID: 8328076235031032316}
+  - component: {fileID: 6453246337990612687}
+  - component: {fileID: 4641814890394388554}
   m_Layer: 10
   m_Name: Bullet Enemy DestroyTerrain Hole1
   m_TagString: Untagged
@@ -173,6 +176,50 @@ MonoBehaviour:
   spawnedObjectsOnExplosion:
   - {fileID: 8746525151853095140, guid: 982a7f9de5892c14db343f951963a7ea, type: 3}
   holePrefabOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &8328076235031032316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd886e9e9bdbf1141bf3c38a817c0bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionCreationOffset: 0.25
+  heightObjectTag: GroundHeight
+--- !u!114 &6453246337990612687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4746ad1155ec0448cdaa1eb9e09d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8746525151853095140, guid: 982a7f9de5892c14db343f951963a7ea, type: 3}
+  offset: {x: 0, y: 0, z: 0}
+--- !u!58 &4641814890394388554
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.15
 --- !u!1 &5157535602849507218
 GameObject:
   m_ObjectHideFlags: 0
