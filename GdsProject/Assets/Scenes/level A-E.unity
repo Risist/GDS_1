@@ -409,6 +409,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextLevelLoad
       objectReference: {fileID: 0}
+    - target: {fileID: 4925357255166214827, guid: eafadd2506e914c41b4c5d2b889f0b16,
+        type: 3}
+      propertyPath: livesGain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4925357255166214831, guid: eafadd2506e914c41b4c5d2b889f0b16,
         type: 3}
       propertyPath: m_RootOrder
@@ -1468,7 +1473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865360616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.65, y: 3.13, z: 0}
+  m_LocalPosition: {x: 8.78, y: 3.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1568222512}
