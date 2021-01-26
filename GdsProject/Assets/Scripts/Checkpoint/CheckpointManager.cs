@@ -26,7 +26,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
 
     CarMovementController _playerMovement;
 
-    static MinimalTimer _timer = new MinimalTimer(); 
+    public static MinimalTimer _timer = new MinimalTimer(); 
 
     [Header("UI")]
     public Text currentLevelName;

@@ -25,7 +25,7 @@ public class NewLevelLoad : MonoBehaviour
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
-        SummaryScrean.instance.Open(0);
+        SummaryScrean.instance.Open(CheckpointManager._timer.ElapsedTime());
         //CheckpointManager.instance.LoadNextLevel();
     }
 }

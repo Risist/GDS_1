@@ -6,21 +6,8 @@ using Ai.Eqs;
 
 public class DestroyOnGroundHit : MonoBehaviour
 {
-    public float explosionCreationOffset = 0.25f;
-    public string heightObjectTag = "GroundHeight";
-    float height;
-
-    private void Start()
+    public void OnGroundHit(float x)
     {
-        var heightObject = GameObject.FindGameObjectWithTag(heightObjectTag)?.transform;
-        height = heightObject.position.y - explosionCreationOffset;
-    }
-
-    void Update()
-    {
-        if (transform.position.y < height)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
