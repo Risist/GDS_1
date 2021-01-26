@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6734101937735377187}
   - component: {fileID: 562444996854654165}
   - component: {fileID: 6643351816641866647}
+  - component: {fileID: 8897293144806205417}
   m_Layer: 0
   m_Name: Obstacle2
   m_TagString: Untagged
@@ -197,6 +198,32 @@ MonoBehaviour:
   objectsToSpawn:
   - {fileID: 8746525151853095140, guid: 982a7f9de5892c14db343f951963a7ea, type: 3}
   spawnPointOffset: {x: 0, y: 0, z: 1}
+--- !u!61 &8897293144806205417
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012551609931724180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.77, y: 0.92}
+    newSize: {x: 0.77, y: 0.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.77, y: 0.92}
+  m_EdgeRadius: 0
 --- !u!1 &8234038113108521773
 GameObject:
   m_ObjectHideFlags: 0
