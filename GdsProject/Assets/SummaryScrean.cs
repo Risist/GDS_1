@@ -19,7 +19,6 @@ public class SummaryScrean : MonoSingleton<SummaryScrean>
     public GameObject buttonBackToMenu;
 
 
-
     public void Open(float time)
     {
         Time.timeScale = 0;

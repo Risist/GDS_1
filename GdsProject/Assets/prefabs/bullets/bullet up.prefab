@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 7709465395362720517}
   - component: {fileID: 379757645796250792}
   - component: {fileID: 796168907505112475}
+  - component: {fileID: 2163983373682657208}
   m_Layer: 12
   m_Name: bullet up
   m_TagString: Untagged
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredMask:
     serializedVersion: 2
-    m_Bits: 567
+    m_Bits: 1591
   damageDataOnce:
     damage: 0
     staggerIncrease: 0
@@ -380,3 +381,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &2163983373682657208
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.15

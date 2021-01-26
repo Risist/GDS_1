@@ -58,6 +58,9 @@ GameObject:
   - component: {fileID: 6856673861186242595}
   - component: {fileID: 8089238870583437544}
   - component: {fileID: 1856204293333566367}
+  - component: {fileID: 4641814890394388554}
+  - component: {fileID: 971113632523107743}
+  - component: {fileID: 7853108338552010260}
   m_Layer: 10
   m_Name: Bullet Enemy DestroyTerrain Hole1
   m_TagString: Untagged
@@ -74,7 +77,7 @@ Transform:
   m_GameObject: {fileID: 3362799001427420068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.892301, y: 0.15020028, z: -0.125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 1481485764036679748}
   - {fileID: 1359671642939755536}
@@ -172,7 +175,56 @@ MonoBehaviour:
     type: 3}
   spawnedObjectsOnExplosion:
   - {fileID: 8746525151853095140, guid: 982a7f9de5892c14db343f951963a7ea, type: 3}
-  holePrefabOffset: {x: 0, y: 0, z: 0}
+  holePrefabOffset: {x: 0, y: 0, z: 100}
+--- !u!58 &4641814890394388554
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.15
+--- !u!114 &971113632523107743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd886e9e9bdbf1141bf3c38a817c0bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionCreationOffset: 0.25
+  heightObjectTag: GroundHeight
+--- !u!114 &7853108338552010260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0f65a6838b398409a1cc7d13d378c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+  destroyOnDeath: 1
+  tResetStagger:
+    cd: 1
+  staggerLimit: 0
+  staggerLevel: 0
 --- !u!1 &5157535602849507218
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,11 +10,14 @@ public class CheckpointRecorder : MonoBehaviour
     public string activatingTag = "Player";
     public string checkpointName = "A";
 
+    public AudioSource source;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
+        source.PlayOneShot(source.clip);
         CheckpointManager.instance.RecordCheckpoint(checkpointName);
     }
 
@@ -23,6 +26,7 @@ public class CheckpointRecorder : MonoBehaviour
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
+        source.PlayOneShot(source.clip);
         CheckpointManager.instance.RecordCheckpoint(checkpointName);
     }
 }
