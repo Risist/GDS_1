@@ -57,7 +57,7 @@ public class SummaryScrean : MonoSingleton<SummaryScrean>
 
     public void NextLevel()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0;
         CheckpointManager.instance.LoadNextLevel();
     }
 
