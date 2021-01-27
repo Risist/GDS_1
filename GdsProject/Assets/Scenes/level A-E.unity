@@ -1788,12 +1788,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UFO 2 NO SUICIDE pkt A
       objectReference: {fileID: 0}
-    - target: {fileID: 6659122242825470607, guid: 2555d59519971fd4bbaf807b7089e7db,
-        type: 3}
-      propertyPath: stateList.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: 6f7b1a04f7225dd4ea8691768f858160,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2555d59519971fd4bbaf807b7089e7db, type: 3}
 --- !u!1001 &1073378939
