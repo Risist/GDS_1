@@ -138,10 +138,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3944839943974333803, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
+        type: 3}
+      propertyPath: m_Text
+      value: Sorry No Bonus
+      objectReference: {fileID: 0}
     - target: {fileID: 5079132940137963099, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443728893927603569, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
+        type: 3}
+      propertyPath: m_Text
+      value: Back to Menu
       objectReference: {fileID: 0}
     - target: {fileID: 8067778416415888381, guid: 1c52bd9a79a0ac946a00a7bfd578e9cc,
         type: 3}
