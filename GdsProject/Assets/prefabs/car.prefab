@@ -465,7 +465,7 @@ MonoBehaviour:
   _offsetPercent: 0
   offsetChangeSpeed: 0.5
   offsetMin: 7
-  movementSpeedMin: 1.25
+  movementSpeedMin: 1.1
   offsetMax: 1
   movementSpeedMax: 1.65
 --- !u!61 &2597120155978111589
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3362799001427420068, guid: 45764a0898c81c84d94da70f74e8b61c, type: 3}
   shootRate:
-    cd: 0.45
+    cd: 0.48
   parent: 1
 --- !u!1 &5031726869203674994
 GameObject:
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3362799001427420068, guid: d0fc06367c4eeb643a5be94552193ed9, type: 3}
   shootRate:
-    cd: 0.2
+    cd: 0.22
   parent: 1
 --- !u!1 &6609320136059627582
 GameObject:
