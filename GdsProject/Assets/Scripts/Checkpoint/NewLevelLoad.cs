@@ -17,6 +17,7 @@ public class NewLevelLoad : MonoBehaviour
             return;
 
         LivesManager.instance.GainLive(livesGain);
+        SummaryScrean.instance.Open(CheckpointManager._timer.ElapsedTime());
         //CheckpointManager.instance.LoadNextLevel();
     }
 
@@ -25,6 +26,7 @@ public class NewLevelLoad : MonoBehaviour
         if (!collision.gameObject.CompareTag(activatingTag))
             return;
 
+        LivesManager.instance.GainLive(livesGain);
         SummaryScrean.instance.Open(CheckpointManager._timer.ElapsedTime());
         //CheckpointManager.instance.LoadNextLevel();
     }
