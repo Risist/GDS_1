@@ -102,7 +102,7 @@ PrefabInstance:
         type: 3}
       propertyPath: stateList.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 5eb2958695b6f5746b3218bf7d94d39e,
+      objectReference: {fileID: 11400000, guid: c31d0983a07dfa54db299eeb0c473c6a,
         type: 2}
     - target: {fileID: 7981163570168515710, guid: dc81f646c1afbc84eb9c4fb32e4249d3,
         type: 3}
