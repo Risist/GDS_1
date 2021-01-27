@@ -79,6 +79,8 @@ namespace Ai
                         currentState.OnBegin();
                         return true;
                 }
+
+                BroadcastMessage("OnFinishedAllStates", finishAction);
             }
             return true;
         }
