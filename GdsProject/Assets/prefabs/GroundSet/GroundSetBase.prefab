@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35129b258e346bc41a1f3fb3d7f78eac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fabe2b283d758084cb536b4cbb8e8032, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 020813bba45ee1147852a816bf60d9a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f0a672d94c813247a7f6731f90e530a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 020813bba45ee1147852a816bf60d9a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f0a672d94c813247a7f6731f90e530a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3019,23 +3019,22 @@ MonoBehaviour:
   levelDatas:
   - buildIndex: 1
     initialCheckpoint: 570
-    levelName: 
-    averageTime: 0
+    levelName: A
+    averageTime: 80
     completionPercentStart: 0
     completionPercentFinish: 0.333333
   - buildIndex: 2
     initialCheckpoint: 600
-    levelName: 
-    averageTime: 0
+    levelName: E
+    averageTime: 90
     completionPercentStart: 0.33333334
     completionPercentFinish: 0.6666666
   - buildIndex: 3
     initialCheckpoint: 600
-    levelName: 
-    averageTime: 0
+    levelName: J
+    averageTime: 100
     completionPercentStart: 0.666666
     completionPercentFinish: 1
-  currentLevelId: 0
   currentLevelName: {fileID: 8424760236300046000}
   currentTimeName: {fileID: 5748537680463969304}
   levelCompletionFillBar: {fileID: 2743037579557715462}

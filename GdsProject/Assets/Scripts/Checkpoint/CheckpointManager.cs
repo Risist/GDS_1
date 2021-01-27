@@ -20,7 +20,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
         public float completionPercentFinish;
     }
     public LevelData[] levelDatas;
-    public int currentLevelId;
+    public static int currentLevelId;
 
     static float lastCheckpoint;
 
@@ -60,7 +60,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
             levelDatas[currentLevelId].completionPercentFinish,
             levelCompletion);
 
-        levelCompletionFillBar.fillAmount = levelCompletion;
+        levelCompletionFillBar.fillAmount = barFillPercent;
     }
 
     public void RecordCheckpoint(string checkpointName)

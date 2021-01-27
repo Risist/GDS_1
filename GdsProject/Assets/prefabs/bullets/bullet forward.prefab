@@ -158,9 +158,9 @@ GameObject:
   - component: {fileID: 3362799001427420070}
   - component: {fileID: 3362799001427420069}
   - component: {fileID: 8510622960392746529}
-  - component: {fileID: 1809542631362846750}
   - component: {fileID: 8139418982028378012}
   - component: {fileID: 4276818393566213447}
+  - component: {fileID: 3117426469521148217}
   m_Layer: 12
   m_Name: bullet forward
   m_TagString: Untagged
@@ -207,7 +207,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 3362799001427420068}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -242,22 +242,6 @@ MonoBehaviour:
   damageDataEnter:
     damage: 0
     staggerIncrease: 0
---- !u!58 &1809542631362846750
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362799001427420068}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.15
 --- !u!114 &8139418982028378012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,4 +266,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c7e6dca2d6fdf40b3cbc953964ab83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.28
+  delay: 0.26
+--- !u!58 &3117426469521148217
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4

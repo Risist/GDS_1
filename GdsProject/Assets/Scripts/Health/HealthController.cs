@@ -45,9 +45,9 @@ public class HealthController : MonoBehaviour, IDamageable
             onStaggerCallback(data);
         }
 
-        if (currentHealth > 0)
+        /*if (currentHealth > 0)
             onDamageCallback(data);
-        else
+        else*/
             Kill(data);
     }
 

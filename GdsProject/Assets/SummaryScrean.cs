@@ -28,7 +28,7 @@ public class SummaryScrean : MonoSingleton<SummaryScrean>
 
         // TODO Letter
 
-        float topRecordTime = CheckpointManager.instance.levelDatas[CheckpointManager.instance.currentLevelId].averageTime;
+        float topRecordTime = CheckpointManager.instance.levelDatas[CheckpointManager.currentLevelId].averageTime;
         topRecordText.text = (int)topRecordTime / 60 + ":" + (int)topRecordTime % 60;
         
         yourTimeText.text = (int)time / 60 + ":" + (int)time % 60;
@@ -48,7 +48,7 @@ public class SummaryScrean : MonoSingleton<SummaryScrean>
             bonusPointsText.text = "0";
         }
 
-        bool isThereNextLevel = CheckpointManager.instance.currentLevelId + 1 < CheckpointManager.instance.levelDatas.Length;
+        bool isThereNextLevel = CheckpointManager.currentLevelId + 1 < CheckpointManager.instance.levelDatas.Length;
 
 
         buttonNextLevel.SetActive(isThereNextLevel);
