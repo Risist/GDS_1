@@ -292,48 +292,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 268475670}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &268475672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268475671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a809fb0e11be9bf46950e10e0d7a3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn: []
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &268475673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268475671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a70ac03c2080ea4e95eca1fafd31d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66,
-    type: 3}
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &268475674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268475671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2f7b128206524da862382b3efafc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66, type: 3}
 --- !u!1001 &291842869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,48 +919,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1122896850}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &516905406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516905405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a809fb0e11be9bf46950e10e0d7a3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn: []
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &516905407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516905405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a70ac03c2080ea4e95eca1fafd31d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66,
-    type: 3}
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &516905408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516905405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2f7b128206524da862382b3efafc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66, type: 3}
 --- !u!1 &578634343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,48 +1717,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1053278596}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &980987427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980987426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a809fb0e11be9bf46950e10e0d7a3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn: []
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &980987428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980987426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a70ac03c2080ea4e95eca1fafd31d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66,
-    type: 3}
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &980987429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980987426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2f7b128206524da862382b3efafc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66, type: 3}
 --- !u!1001 &1053278596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1850,6 +1724,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1170157882}
     m_Modifications:
+    - target: {fileID: 1800724798943962005, guid: 7587ac93cc57b2740bd8f59870aa186b,
+        type: 3}
+      propertyPath: objectsToSpawn.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6659122242825470604, guid: 7587ac93cc57b2740bd8f59870aa186b,
         type: 3}
       propertyPath: m_RootOrder
@@ -1895,7 +1774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UFO 1 SUICIDE pkt D
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8225867913298794666, guid: 7587ac93cc57b2740bd8f59870aa186b, type: 3}
+    - {fileID: 2370872085511506094, guid: 7587ac93cc57b2740bd8f59870aa186b, type: 3}
+    - {fileID: 1800724798943962005, guid: 7587ac93cc57b2740bd8f59870aa186b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7587ac93cc57b2740bd8f59870aa186b, type: 3}
 --- !u!1001 &1063582811
 PrefabInstance:
@@ -3587,48 +3469,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1765408511}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1721842211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721842210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a809fb0e11be9bf46950e10e0d7a3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn: []
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &1721842212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721842210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a70ac03c2080ea4e95eca1fafd31d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66,
-    type: 3}
-  spawnPointOffset: {x: 0, y: 0, z: 1}
---- !u!114 &1721842213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721842210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2f7b128206524da862382b3efafc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66, type: 3}
 --- !u!1001 &1751400121
 PrefabInstance:
   m_ObjectHideFlags: 0
