@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 1765256702009154902}
   - component: {fileID: 9145813415832020974}
   - component: {fileID: 1163529246977312452}
+  - component: {fileID: -2972633622676207760}
   m_Layer: 0
   m_Name: Bullet Enemy Normal
   m_TagString: Untagged
@@ -348,6 +349,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4363020465867209925, guid: 63fed4ee9294e474dbc8f6cb949852dc, type: 3}
   offset: {x: 0, y: 1, z: 0}
+--- !u!114 &-2972633622676207760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362799001427420068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a809fb0e11be9bf46950e10e0d7a3ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToSpawn:
+  - {fileID: 2619111474808772508, guid: 34fdc948e4a6be74b8d9f2112211a2bd, type: 3}
+  spawnPointOffset: {x: 0, y: 0, z: 1}
 --- !u!1 &4954006367312328137
 GameObject:
   m_ObjectHideFlags: 0

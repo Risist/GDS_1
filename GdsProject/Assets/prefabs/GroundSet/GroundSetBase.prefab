@@ -739,7 +739,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Next Level
+  m_Text: Back to Menu
 --- !u!1 &1274001474566066765
 GameObject:
   m_ObjectHideFlags: 0
