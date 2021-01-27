@@ -81,7 +81,7 @@ public class CheckpointManager : MonoSingleton<CheckpointManager>
         PointManager.instance.SaveCheckpointPoints();
 
         lastCheckpoint = levelDatas[currentLevelId].initialCheckpoint;
-        LivesManager.instance.ResetLives();
+        //LivesManager.instance.ResetLives();
         SceneManager.LoadScene(levelDatas[currentLevelId].buildIndex, LoadSceneMode.Single);
     }
     public void LoadFirstLevel()
