@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   maxExecutionTime:
-    cd: 1.65
+    cd: 1.5
   target: {fileID: 11400000, guid: b604208661d2cc949b08a09b216ce5ec, type: 2}
   cachePosition: 1
   bOverrideSpeed: 0
