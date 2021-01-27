@@ -463,11 +463,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _offsetPercent: 0
-  offsetChangeSpeed: 0.5
+  offsetChangeSpeed: 0.46
   offsetMin: 7
   movementSpeedMin: 1.1
   offsetMax: 1
-  movementSpeedMax: 1.8
+  movementSpeedMax: 1.93
 --- !u!61 &2597120155978111589
 BoxCollider2D:
   m_ObjectHideFlags: 0
