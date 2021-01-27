@@ -1,20 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &2612818260871821961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659122242825470606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a70ac03c2080ea4e95eca1fafd31d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 4363020465867209925, guid: a3337f3bdf970e14a820d51a9ab23c52,
-    type: 3}
-  spawnPointOffset: {x: 0, y: 0, z: 1}
 --- !u!114 &207084373159686337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66, type: 3}
+--- !u!114 &2612818260871821961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6659122242825470606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a70ac03c2080ea4e95eca1fafd31d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 2619111474808772508, guid: 2042f20845004ba4fa46976f8fd7ac66,
+    type: 3}
+  spawnPointOffset: {x: 0, y: 0, z: 1}
 --- !u!114 &6032239891228088056
 MonoBehaviour:
   m_ObjectHideFlags: 0
