@@ -467,7 +467,7 @@ MonoBehaviour:
   offsetMin: 7
   movementSpeedMin: 1.1
   offsetMax: 1
-  movementSpeedMax: 1.65
+  movementSpeedMax: 1.8
 --- !u!61 &2597120155978111589
 BoxCollider2D:
   m_ObjectHideFlags: 0
