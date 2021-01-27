@@ -63,7 +63,7 @@ namespace Ai
         {
             if (currentStateIndex >= runtimeStateList.Length)
             {
-                BroadcastMessage("OnFinishedAllStates", finishAction);
+                BroadcastMessage("OnFinishedAllStates", finishAction, SendMessageOptions.DontRequireReceiver);
                 switch (finishAction)
                 {
                     case EFinishAction.EDestroy:
