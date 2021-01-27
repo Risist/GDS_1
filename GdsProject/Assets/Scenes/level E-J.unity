@@ -4307,11 +4307,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextLevelLoad
       objectReference: {fileID: 0}
-    - target: {fileID: 4925357255166214827, guid: eafadd2506e914c41b4c5d2b889f0b16,
-        type: 3}
-      propertyPath: livesGain
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4925357255166214831, guid: eafadd2506e914c41b4c5d2b889f0b16,
         type: 3}
       propertyPath: m_RootOrder
